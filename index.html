@@ -7,15 +7,19 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div class="login-container">
+ <div class="box-container">
  <h1>Login</h1>
  <form id="loginForm">
-    <input type="text" id="usuario" placeholder="Usuário">
-    <input type="password" id="senha" placeholder="Senha">
-    <button type="submit">Entrar</button>
-   </form>
+  <input type="email" id="usuario" placeholder="E-mail" required>
+  <input type="password" id="senha" placeholder="Senha" required>
+  <button type="submit">Entrar</button>
+</form>
+
+<p id="mensagem"></p>
+
+  <p>Ainda não tem conta?</p>
+  <button onclick="window.location.href='cadastro.html'">Cadastrar-se</button>
  </div>
  <script src="script.js"></script>
- <!--CORRIGIDO-->
 </body>
 </html>
